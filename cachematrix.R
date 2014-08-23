@@ -1,10 +1,11 @@
 ## There are two functions here, makeCacheMatrix and cacheSolve. The first function 
-#creates an invertible matrix and stores it and cacheSolve returns its mean.
+#creates an invertible matrix and stores it and cacheSolve returns its solution.
 
 
 ## This function creates an invertible square matrix and uses the <<- operator to store its inverse.
 
 makeCacheMatrix <- function(x = matrix()) { #create matrix x
+        m<-NULL                             #creates a null object to store the results of
         set <- function(y) {
         x <<- y
         m <<- NULL
